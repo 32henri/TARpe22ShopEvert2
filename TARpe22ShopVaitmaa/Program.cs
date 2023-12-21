@@ -2,6 +2,8 @@ using Microsoft.EntityFrameworkCore;
 using TARpe22ShopVaitmaa.ApplicationServices.Services;
 using TARpe22ShopVaitmaa.Core.ServiceInterface;
 using TARpe22ShopVaitmaa.Data;
+using SignalRChat.Hubs;
+
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -15,6 +17,8 @@ builder.Services.AddScoped<IFilesServices, FilesServices>();
 builder.Services.AddScoped<IRealEstatesServices, RealEstatesServices>();
 builder.Services.AddScoped<IWeatherForecastsServices, WeatherForecastsServices>(); 
 builder.Services.AddScoped<IEmailService, EmailService>();
+builder.Services.AddRazorPages();
+builder.Services.AddSignalR();
 
 var app = builder.Build();
 
@@ -36,6 +40,6 @@ app.UseAuthorization();
 app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");
-
+    app.MapHub<ChatHub>("/chatHub");
 
 app.Run();

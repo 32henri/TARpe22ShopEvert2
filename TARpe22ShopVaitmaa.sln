@@ -13,8 +13,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TARpe22ShopVaitmaa.Applicat
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TARpe22ShopVaitmaa.SpaceshipTest", "TARpe22ShopVaitmaa.SpaceshipTest\TARpe22ShopVaitmaa.SpaceshipTest.csproj", "{BA171E48-CBC6-4850-BC33-680004DB0077}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SignalIR", "SignalIR\SignalIR.csproj", "{0929DED4-9010-4FEB-8073-4824D9B4771F}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -41,10 +39,6 @@ Global
 		{BA171E48-CBC6-4850-BC33-680004DB0077}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BA171E48-CBC6-4850-BC33-680004DB0077}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BA171E48-CBC6-4850-BC33-680004DB0077}.Release|Any CPU.Build.0 = Release|Any CPU
-		{0929DED4-9010-4FEB-8073-4824D9B4771F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{0929DED4-9010-4FEB-8073-4824D9B4771F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{0929DED4-9010-4FEB-8073-4824D9B4771F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{0929DED4-9010-4FEB-8073-4824D9B4771F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
